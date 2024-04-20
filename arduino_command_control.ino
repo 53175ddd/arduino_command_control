@@ -27,7 +27,7 @@ void loop() {
   sscanf(recieve, "%s %s %s", cmd, led, status);
 
   char buffer[64];
-  sprintf(buffer, "cmd : %s, selected LED : %s, status : %s\n\n", cmd, led, status);
+  sprintf(buffer, "     command : %s, selected LED : %s,       status : %s\n\n", cmd, led, status);
   Serial.print(buffer);
 
   /* LED コマンドここから */
