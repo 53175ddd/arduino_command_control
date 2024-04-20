@@ -33,7 +33,7 @@ void loop() {
   /* LED コマンドここから */
   if(strncmp(cmd, "led", 3) == 0) {
     Serial.println("\"led\" command start");
-    if(strncmp(led, "1", 1) == 0) {
+    if((strncmp(led, "1", 1) == 0) || (strncmp(led, "a", 1) == 0) || (strncmp(led, "A", 1) == 0)) {
       Serial.println("LED_1 selected");
       if((strncmp(status, "on", 2) == 0) || (strncmp(status, "high", 4) == 0) || (strncmp(status, "1", 1) == 0)) {
         Serial.println("LED_1 turn on");
@@ -45,7 +45,7 @@ void loop() {
         Serial.print("invalid argument : ");
         Serial.println(status);
       }
-    }else if(strncmp(led, "2", 1) == 0) {
+    }else if((strncmp(led, "2", 1) == 0) || (strncmp(led, "b", 1) == 0) || (strncmp(led, "B", 1) == 0)) {
       Serial.println("LED_2 selected");
       if((strncmp(status, "on", 2) == 0) || (strncmp(status, "high", 4) == 0) || (strncmp(status, "1", 1) == 0)) {
         Serial.println("LED_2 turn on");
@@ -57,7 +57,7 @@ void loop() {
         Serial.print("invalid argument : ");
         Serial.println(status);
       }
-    }else if(strncmp(led, "3", 1) == 0) {
+    }else if((strncmp(led, "3", 1) == 0) || (strncmp(led, "c", 1) == 0) || (strncmp(led, "C", 1) == 0)) {
       Serial.println("LED_3 selected");
       if((strncmp(status, "on", 2) == 0) || (strncmp(status, "high", 4) == 0) || (strncmp(status, "1", 1) == 0)) {
         Serial.println("LED_3 turn on");
