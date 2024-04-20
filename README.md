@@ -6,6 +6,8 @@ English follows Japanese
 
 Arduino IDE のシリアルモニタから操作します
 
+使用例：`led 1 on`
+
 ### `led` コマンド
 
 | argument 1 | descriptions |
@@ -22,6 +24,8 @@ Arduino IDE のシリアルモニタから操作します
 ## Commands
 
 Operate from the serial monitor of the Arduino IDE.
+
+How To Use：`led 1 on`
 
 ### "led" command
 
